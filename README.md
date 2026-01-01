@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🧠 MentorLearn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**De la confusion à la clarté**
 
-## Available Scripts
+MentorLearn est un SaaS pédagogique qui transforme la confusion en clarté grâce à l'IA.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Concept
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+MentorLearn propose **2 modes distincts** pour accompagner l'apprentissage et structurer la pensée :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🧩 Mode Prompt
+Transforme une intention floue en prompt parfait, prêt à utiliser.
 
-### `npm test`
+**Idéal pour :**
+- Structurer une idée confuse
+- Créer des prompts professionnels
+- Gagner du temps dans la formulation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎓 Mode Prof
+Explique n'importe quel sujet de façon claire, adaptée et pédagogique.
 
-### `npm run build`
+**Idéal pour :**
+- Comprendre un cours difficile
+- Réviser un concept
+- Apprendre à son rythme
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Démarrage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prérequis
+- Node.js 18+
+- Clés API : `ANTHROPIC_API_KEY` et `OPENAI_API_KEY`
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Créer un fichier `.env` à la racine :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```env
+ANTHROPIC_API_KEY=votre_clé_anthropic
+OPENAI_API_KEY=votre_clé_openai
+PORT=5000
+```
 
-## Learn More
+### Lancement
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Backend** (Terminal 1) :
+```bash
+node backend.js
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Frontend** (Terminal 2) :
+```bash
+npm start
+```
 
-### Code Splitting
+L'application s'ouvre sur `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🎨 Stack Technique
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend** : React 19
+- **Backend** : Node.js + Express
+- **IA** : Claude 3.5 Sonnet (Anthropic)
+- **Design** : CSS moderne, épuré, accessible
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧱 Architecture
 
-### Advanced Configuration
+```
+mentorLearn/
+├── backend.js           # API Express + logique IA
+├── src/
+│   ├── App.js          # Interface React
+│   ├── App.css         # Design system
+│   └── index.js        # Point d'entrée React
+├── .env                # Variables d'environnement
+└── package.json        # Dépendances
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📖 Utilisation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Choisis ton mode** : Prompt ou Prof
+2. **Écris ta demande** : intention floue ou question
+3. **Reçois une réponse claire** : prompt structuré ou explication pédagogique
+4. **Copie ou recommence** : selon tes besoins
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🛡️ Éthique
+
+MentorLearn aide à **comprendre**, pas à tricher.
+
+Les demandes visant à contourner l'apprentissage (examens, devoirs) sont refusées avec proposition d'explication pédagogique.
+
+---
+
+## 📝 Licence
+
+Projet privé © 2025 MentorLearn
+
+---
+
+**Construit avec ❤️ pour rendre l'apprentissage plus clair et accessible**

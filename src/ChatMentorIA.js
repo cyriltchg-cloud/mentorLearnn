@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const API_URL = "http://localhost:5000/api/explain-document";
+const API_URL = "http://localhost:5001/api/explain-document";
 
 export default function ChatMentorIA() {
   const [messages, setMessages] = useState([
