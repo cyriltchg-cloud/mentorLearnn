@@ -199,3 +199,4 @@ const userSchema = {
 - **bcrypt** : https://www.npmjs.com/package/bcrypt
 - **crypto (Node.js)** : Intégré, pas d'installation nécessaire
 
+

@@ -161,3 +161,4 @@ Dans le terminal backend, tu devrais voir :
 ✅ **Erreurs :** Messages propres (pas d'erreur brute)  
 ✅ **Design UI :** Aucun changement visible (interface identique)
 
+
